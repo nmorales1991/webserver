@@ -22,6 +22,6 @@ app.get('/',(req,res)=>{
     })
 })
 
-app.listen(80,()=>{
-    console.log("Escuchando peticiones en el puerto 80")
+app.listen(8080,()=>{
+    console.log("Escuchando peticiones en el puerto 8080")
 })
