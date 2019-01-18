@@ -19,7 +19,8 @@ app.set('view engine','hbs')
 //renders
 app.get('/',(req,res)=>{
     res.render('home',{
-        nombre:'hUmano'
+        nombre:'hUmanu'//estas variables se pueden usar en el .hbs con {{}}, si se manda a llamar alguna que no esté acá, entonces se buscará en los helpers, como en el caso del getAnio del footer
+    })
 })
 app.get('/about',(req,res)=>{
     res.render('about')
