@@ -1,9 +1,50 @@
-footer{
-    background-color: #353a3f;
-    color: white;
-    width: 100%;
-    position: fixed;
-    bottom: 0px;
+.navbar{
+    background-color:rgba(55, 55, 57, 0.62);
+    box-shadow: 0px 3px 7px 1px #271c1ca3;
+}
+#boton-busqueda{
+    color: antiquewhite;
+    border-color: antiquewhite;
+}
+.footer{
+    height: 60px;
+    line-height: 60px;
+    background-color:rgb(56, 56, 61);
     text-align: center;
-    padding: 20px;
+    color: antiquewhite;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    background: #1D4350;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .card{
+    width:8rem;
+    border-color: antiquewhite;
+    background-color: #4d505c9c;
+    box-shadow: 3px 3px 5px 3px #1e1c1c57;
+}
+.container-fluid{
+    padding: 20px 40px 20px 40px;
+}
+h3{
+    text-align: center;
+    color: antiquewhite;
+    margin-bottom: 40px;
+}
+.card-footer{
+    color: antiquewhite;
+    border-color: antiquewhite;
+    text-align: center;
+    letter-spacing: 0.7px;
+    font-weight: 300;
+    padding: 7px 2px 7px 2px;
 }
