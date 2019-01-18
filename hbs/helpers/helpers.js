@@ -17,7 +17,7 @@ hbs.registerHelper('obtenerPokemons',()=>{
     var obj = JSON.parse(fs.readFileSync('public/assets/data/data.json', 'utf8'));
     var poke = ""
     for(var i =0; i < obj.results.length;i++){
-        poke = poke +'<div class="card mr-4 mb-2"><img src="'+obj.results[i].img+'" class="card-img-top" alt="..."/><div class="card-footer">'+obj.results[i].name+'</div></div>';
+        poke = poke +`<div class="card mr-4 mb-2"><img src=${obj.results[i].img} class="card-img-top"/><div class="card-footer">#${i+1} ${obj.results[i].name}</div></div>`;
     }
 
     return poke
