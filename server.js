@@ -14,9 +14,9 @@ app.use(express.static(__dirname+'/public'))
 hbs.registerPartials(__dirname + '/views/parciales')
 //engine que renderiza archivos hbs
 app.set('view engine','hbs')
-dns.lookup('iana.org', (err, address, family) => {
-    console.log('address: %j family: IPv%s', address, family);
-  });
+dns.lookup(require('os').hostname(), function (err, add, fam) {
+    console.log('addr: '+add);
+  })
 //renders
 app.get('/',(req,res)=>{
     const cpu = os.cpus()
